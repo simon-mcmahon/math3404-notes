@@ -1,3 +1,8 @@
+TO DO:
+Go through and sketch the curves in le
+
+
+
 OPTIMAL control:
 minimization or maximizatino of a functional subject to DE constraints
 
@@ -67,10 +72,94 @@ MUCH SIMPLER.
 
 Presentation of general solution of a linear optimal control problem:
 
+A  = state equation matrix
+l = control matrix
+xdot = derivative of coordinate.
+J = time optimal control
+abs(u ) <= 1
+
+phase plane analysis:
+solution of xdot = A x is the linear combination of the eigenvectors to multiplied by the exponential of the eigenvalue
+
+if eigenvalue:
+real negaive (STABLE)
+real positive (UNSTABLE)
+real opposite (SADDLE POINT)
+
+costate equations are phi dot = -A^T * phi
+u = sgn ( l phi1 + m phi2)
+
+controls pieceise cts as switching at zeros of S  = lphi1(t) + m phi2(t) 
+
+BETWEEN TWO CONSECUTIVE ZEROS OF S, u* is CONSTANT.
+so we can find the equilibrium points where xdot = 0. ( id detA neq 0)
+
+now using our linear algebra, we can solve the costate equations by finding the eigenvalues and vectors of -A^T.
+hence, we can also find the switching function 
+
+if A has real eigenvalues, -A^T does as well.
+
+IF EIGENVALUES OF A ARE REAL,  the switching function has at most one zero. (so maximum one switch occurs).
+
+PMP IS BOTH NECESSARY AND SUFFICIENT FOR LINEAR TIME OPTIMAL CONTROL PROBLEMS.
+
+Example 1: (stable node real eigenvalues).
+find f0, f1, f2 from the DEs. write the hamiltonian. find the costate equations in matrix form. 
+find the eigenvalues and eigenvectors of A and solve the general system using the method of undetermined coefficients for both u* = 1 and u* = -1.
+Draw in the phase portrait for each case. Consider a starting point w and determine which curves actually go the desired end point (origin).
+
+prune the family of C+ and C- curves to only the ones which go through the origin (if they are ridden after a switch).
+
+does not appear to be any "region of controlability".
+
+Solving systems of differential equations using the matrix exponential 
+
+firstly, find diagonalize A by finding its eigenvalues then use e^tA = P e^tD P^(-1). and then you can solve the IVP using the formula
+given in these notes here:
+https://math.berkeley.edu/~conway/Teaching/old/summer2016-2552bc/exercises/NonhomoSys.pdf
+The diagonal matrix is the eigenvalues of the matrix A along the leading diagonal.
+The exponential of this matrix is the exponential of these eigenvalues down the diagonal.
+ 
+using the method of undetermined coefficients, we can solve the system xdot = Ax + (l;m)*u (by using the method of undetermined coefficinets.
+Note that because, in a linear optimal control system the u value is either +-1, we can use a constant undetermined coefficient and 
+the satisfactory equations works out to be (for the particular solution) solving where system of linear equations is equal to its equilibirum point.
+
+Hence, we are able to solve the homogenous case in general for these simple problems and then add on the equilibrium point (xdot =0)
+at the end for each case u* = 1 and u* = 0.
 
 
+http://tutorial.math.lamar.edu/Classes/DE/NonhomogeneousSystems.aspx
 
+Example 2: (unstable node real eigenvalues)
+region of controlability is the area of the starting point in which the origin is acutally reached. The region of controlability expands as the 
+maximum magnitude of the value of the control force increases.
 
+Example 3: (saddle point node)
+region of controlability is an infinite strip, outside of which the control is impossible.
 
+TRICK:
+IN ORDER TO INSPECT THE GRADIENT OF THE PHASE PORTRAIT, use dx2/dx1 = x2dot /x1dot ( which can be found from the state equations).
+
+Example 4: (determinant equal to 0).
+no simgularity at origin but for all of x2. Hamiltonian construction and costate equation formation still apply although 
+matrix methods cannot be used as singular.
+
+COMPLEX EIGENVALUES:
+Key differences:
+With real eigenvalues we dont really need to find the switching function as there is at most one zero (switching point).
+
+with complex eigenvalues, the system must be solved for phi to understand when the zeros occur as there can be any number of switches.
+H is still piecewise continuous.
+
+Example 1:
+eigenvalues +- i. instead of linear comb of sine and cosine, represented as a sine with a constant offset to make the zero finding easier.
+u*=1 and u*=-1 cases solved by recombining the x system into a 2nd order linear ode and quoting solution.
+Other methods such as the method of undetermined coefficients can be used as well.
+
+phase plane is a set of circles centre at (1,0) and (-1, 0) for u* = 1 , -1 respecitvely.
+the result of the switching curve implies switches are regular occurances, pi apart in time. a semicircle is swept out in this time.
+
+The final optimal control looks like a series of circles with progressively smaller radii 
+The optimal control is som
 
 
