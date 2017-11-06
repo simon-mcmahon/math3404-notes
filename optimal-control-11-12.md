@@ -69,7 +69,14 @@ Apply the end point condition for t1 to solve for constants A and B (found in in
 Find the optimal values of u* and x. Finish.
 
 
-
-
-
 # Module 12 (Quadratic Cost)
+
+## Sumamry:
+
+Goes through the formulation of a quadratic cost function optimal control function (linear state equtaion) problem formulation.
+derives the PMP from the calculus of variations when u unconstrained.
+
+Does optimal control through the lens of calculus of variations.
+
+The tutorial sheet 10 has precisely 2 quadratic optimal control problems of similiar difficulty to the example given in module 11 and the two previous years practise exams do not feature them. It is unlikely this will be on the final in a large part.
+
