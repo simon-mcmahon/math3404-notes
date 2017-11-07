@@ -50,14 +50,25 @@ ith and jth components.
 
 ### Fixed end point problems
 
-E-L equation is a necessary condition.
+E-L equation is a necessary condition.  
+![EL](/EL.PNG)
 
-derivative of f wrt x - d/dt ( derivative of f wrt xdot) = 0.
-
+If the functional is independent of time then:  
+![EL-time-indep](/EL-t-indep.PNG)
 
 ### Variable end point
 
 Transversality condition is added into the mix.
+
+![transversality](/transversality.PNG)
+
+When the solution curve is a constant value (cdot = 0), this simplifies to:
+
+![tranversality-cdot](/transversality-cdot-zero.PNG)
+
+When the endpoint is truly free and so the derivative of c can tend towards infinity.
+
+![tranversality-cdot-inf](/transversality-cdot-inf.PNG)
 
 
 ### Isoperimetric Problems
