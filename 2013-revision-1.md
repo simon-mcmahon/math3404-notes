@@ -86,15 +86,26 @@ This allows enough conditional equations to find the values of the 3 variables.
 
 ### Hilbert invariant integral and local minimizers
 
+### Field of extremals
+A field of extremals is a family of curves (usually dependent on variables k and l) which is a simple cover of the plane such that
+one and only one curve passes through each point. We define in this family, a slope field
+
+ xdot = p(t,x)
+
+There is a unique value of slope for each point in the plane. The slope function satisfies an equation similiar to the E-L equation.  
+
+ ![EL-slope-funct](/EL-slope-funct.PNG)
+
 ### Weierstrass Sufficient Conditions
 In order for the extremal x = x*(t) give a strong locla minimum to J[x] it is SUFFICIENT that:
 C* is a member of a field of extremals.
 E(t,x,xdot,p) >= 0 for all (t and x) close to C* and arbitrary values of xdot.
 
 E(t,x,xdot,p) is the Weierstrass Excess function.
-This is the integrand of the Delta J.
-p is the slope of the field of extremals at (t,x).
-xdot is the slope of C at (t,x).
+This is the integrand of the Delta J.  
+
+p is the slope of the field of extremals at (t,x).  
+xdot is the slope of C at (t,x).  
 
 ![delta-J](/delta-j.PNG)
 ![excess-funct](/excess-funct.PNG)
