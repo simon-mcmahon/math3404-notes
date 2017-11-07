@@ -70,6 +70,10 @@ When the endpoint is truly free and so the derivative of c can tend towards infi
 
 ![tranversality-cdot-inf](/transversality-cdot-inf.PNG)
 
+### Corner conditions
+In order that a D1 curve (fixed end point) be minimizing:
+1. derivative of f wrt xdot is cts at a corner
+2. f - xdot* df/d(xdot) is cts at a corner
 
 ### Isoperimetric Problems
 Definition: Minimize a functional J but subject to the constraint that another functional I is equal to a constant c.
