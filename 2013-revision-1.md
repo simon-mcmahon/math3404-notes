@@ -102,9 +102,11 @@ Solve the EL equation in general to find the extremal satisfying the end points.
 Then take the time derivative of the field function x to find xdot = p (slope function)
 
 ### Weierstrass Sufficient Conditions
-In order for the extremal x = x*(t) give a strong locla minimum to J[x] it is SUFFICIENT that:
+In order for the extremal x = x*(t) give a strong local minimum to J[x] it is SUFFICIENT that:
 C* is a member of a field of extremals.
 E(t,x,xdot,p) >= 0 for all (t and x) close to C* and arbitrary values of xdot.
+
+**If the field of extremals considered extends to the whole plane then the extremal is a global minimizing curve**
 
 E(t,x,xdot,p) is the Weierstrass Excess function.
 This is the integrand of the Delta J.  
@@ -115,6 +117,14 @@ xdot is the slope of C at (t,x).
 ![delta-J](/delta-j.PNG)
 ![excess-funct](/excess-funct.PNG)
 
+### Problem Strategy
+
+1. Find a 1 variable field of extremals
+ * Sub into the EL-equation
+ * Solve in general
+ * Add back in a variable to find 1-var field of extremals.
+2. Take derivative and find slope field
+3. Substitute into the Weirstrauss excess function and prove that it is greater than 0 (usually by factorizing as an even power).
 
 # Optimal Control Phase Portraits:
 The phase portraits in the back of the book are the answer you are looking for to help you sketch the phase planes.
