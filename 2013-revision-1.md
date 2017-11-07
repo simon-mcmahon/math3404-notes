@@ -140,4 +140,9 @@ Find the meaning of the lines in the conbined phase portrait. (Looks to be the n
 
 ### Pure imaginary
 
+Phase portraits are concentric circles centred at equilibrium points. Switches occur every pi in time which is a half circle rotation. The switching curve (gamma) is a series of circles of radius 1 along the x-axis. 
+
+![seperate phase planes imag](/pure-imag-1.PNG)
+![combined-imag](/pure-imag-2.PNG)
+
 ### Complex??? (possible differentiated based on the positive and negative value of the real component).
