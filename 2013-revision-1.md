@@ -84,3 +84,38 @@ Use E-L equation on the functional f + lambda*g to find a necessary equation in 
 Use the 2 endpoint conditions AND then use the contraint itself (integral g from t0 to t1) = c.
 This allows enough conditional equations to find the values of the 3 variables.
 
+### Hilbert invariant integral and local minimizers
+
+### Weierstrass Sufficient Conditions
+In order for the extremal x = x*(t) give a strong locla minimum to J[x] it is SUFFICIENT that:
+C* is a member of a field of extremals.
+E(t,x,xdot,p) >= 0 for all (t and x) close to C* and arbitrary values of xdot.
+
+E(t,x,xdot,p) is the Weierstrass Excess function.
+This is the integrand of the Delta J.
+p is the slope of the field of extremals at (t,x).
+xdot is the slope of C at (t,x).
+
+![delta-J](/delta-j.PNG)
+![excess-funct](/excess-funct.PNG)
+
+
+#### Strategy for finding the field of extremals.
+**TODO:**
+
+
+# Note to self:
+The phase portraits in the back of the book are the answer you are looking for to help you sketch the phase planes.
+Find the meaning of the lines in the conbined phase portrait. (Looks to be the nullcline lines going through both P and Q (equilibrium points for the costate equations for both cases of u*)).
+
+## Eigenvalue outputs and the relevant phase portrait general shape
+
+### Real stable
+
+### Real Unstable
+
+### Real Saddle
+
+### Pure imaginary
+
+### Complex??? (possible differentiated based on the positive and negative value of the real component).
