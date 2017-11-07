@@ -78,8 +78,7 @@ For fixed endpoints, for an optimal curve x = x*(t) to exist, it must be an extr
 **J[x] + lambda * I[x] = integral of (f + lambda g) from t0 to t1 **
 where f and g were the cost functions of the functionals J and I respectively.
 
-#### Example:
-##### Strategy:
+#### Strategy:
 Use E-L equation on the functional f + lambda*g to find a necessary equation in terms of variables lambda, k and l.
 Use the 2 endpoint conditions AND then use the contraint itself (integral g from t0 to t1) = c.
 This allows enough conditional equations to find the values of the 3 variables.
@@ -95,6 +94,12 @@ one and only one curve passes through each point. We define in this family, a sl
 There is a unique value of slope for each point in the plane. The slope function satisfies an equation similiar to the E-L equation.  
 
  ![EL-slope-funct](/EL-slope-funct.PNG)
+ 
+#### Finding a field of extremals (or slope function)
+
+Solve the EL equation in general to find the extremal satisfying the end points. Then take the specific function and replace one constant with a variable so it is a field of extremals. (Easy way is to edit the constant, vertical translation parameter).
+
+Then take the time derivative of the field function x to find xdot = p (slope function)
 
 ### Weierstrass Sufficient Conditions
 In order for the extremal x = x*(t) give a strong locla minimum to J[x] it is SUFFICIENT that:
@@ -111,11 +116,7 @@ xdot is the slope of C at (t,x).
 ![excess-funct](/excess-funct.PNG)
 
 
-#### Strategy for finding the field of extremals.
-**TODO:**
-
-
-# Note to self:
+# Optimal Control Phase Portraits:
 The phase portraits in the back of the book are the answer you are looking for to help you sketch the phase planes.
 Find the meaning of the lines in the conbined phase portrait. (Looks to be the nullcline lines going through both P and Q (equilibrium points for the costate equations for both cases of u*)).
 
