@@ -145,4 +145,17 @@ Phase portraits are concentric circles centred at equilibrium points. Switches o
 ![seperate phase planes imag](/pure-imag-1.PNG)
 ![combined-imag](/pure-imag-2.PNG)
 
-### Complex??? (possible differentiated based on the positive and negative value of the real component).
+### Complex (negative real component)
+The phase portrait is similiar to the pure imaginary case, except instead of concentric circles is is concentric spirals around an equilibrium point. Switching function is the same as the pure imaginary case as the exponential component cannot equal zero (roots offset by pi).
+
+![neg-real combined](/neg-real-combined.jpg)
+
+**Switching curve is not circles with constant radius. It is circles with growing radius due to the exponential term.**
+
+
+![neg-real switching](/neg-real-switching.jpg)
+
+Work backwards in order to derive the switching curve and progressive expanding x*.
+
+### Complex (positive real componetn)
+Similar to that of negative but outwardly pointing exponential parts due to the nature of the equilibrium points.
